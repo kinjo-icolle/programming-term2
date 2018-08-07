@@ -45,10 +45,12 @@ def display(msgs):
 
 # メイン処理
 if __name__ == '__main__':
-    try:
-        input_date = input('日付を入力してください。')
-        target_date = datetime.strptime(stringinput_date_date_1, '%Y/%m/%d')
+    while True:
+        try:
+            input_date = input('日付を入力してください。')
+            target_date = datetime.strptime(input_date, '%Y/%m/%d')
 
-        display(process(target_date))
-    except:
-        print('入力された日付が不正です。再入力してください。')
+            display(process(target_date))
+            break
+        except:
+            print('入力された日付が不正です。再入力してください。')
