@@ -1,0 +1,6 @@
+Tanaka,72
+Yamada,65
+Hirata,100
+Akai,56
+Fukuda,66
+Sakai,80
